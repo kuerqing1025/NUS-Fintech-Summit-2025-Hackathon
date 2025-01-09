@@ -1,0 +1,71 @@
+/* CSS file for Home component */
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  .main-container {
+    text-align: center;
+    padding: 50px 100px;
+  }
+  .main-container img{
+    width: 250px;
+    margin: 10px;
+  }
+
+  .main-container h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .main-container p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .upload {
+    width: 500px;
+    height: 200px;
+    background: #2a2a2a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    border-radius: 5px;
+  }
+
+  .upload input {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1em;
+    margin: 20px 10px;
+    outline: none;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .upload p{
+    text-align: left;
+    font-size: 1em;
+    margin: 0px 40px;
+  }
+  
+  .upload input::placeholder {
+    color: #ccc;
+  }
+  
+  .upload input:focus {
+    border: 1px solid #007bff;
+    background-color: #111;
+  }
+  
