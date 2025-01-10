@@ -7,13 +7,16 @@ body {
     align-items: center;
     height: 100vh;
     font-family: Arial, sans-serif;
+    background: #1C1F26;
+    color: white;
   }
   
   .main-container {
     text-align: center;
     padding: 50px 100px;
   }
-  .main-container img{
+
+  .main-container img {
     width: 250px;
     margin: 10px;
   }
@@ -27,51 +30,61 @@ body {
     font-size: 1.2em;
     line-height: 1.6;
     margin-bottom: 20px;
+    color: #8B8B8B;
   }
 
   .upload {
-    width: 500px;
-    height: 200px;
-    background: #2a2a2a;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    max-width: 800px;
     margin: 20px auto;
-    border-radius: 5px;
   }
 
-  .upload input {
-    background-color: #000;
-    color: #fff;
+  .input-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: #2A2D35;
+    border-radius: 8px;
+    padding: 5px;
+  }
+
+  .input-container input {
+    flex: 1;
+    background: transparent;
     border: none;
-    border-radius: 5px;
-    padding: 10px;
+    color: white;
+    padding: 15px;
     font-size: 1em;
-    margin: 20px 10px;
     outline: none;
     width: 100%;
-    max-width: 400px;
   }
 
-  .upload p{
-    text-align: left;
-    font-size: 1em;
-    margin: 0px 40px;
-  }
-  
-  .upload input::placeholder {
-    color: #ccc;
-  }
-  
-  .upload input:focus {
-    border: 1px solid #007bff;
-    background-color: #111;
+  .input-container input::placeholder {
+    color: #8B8B8B;
   }
 
-  .check-report{
-    width: 600px;
-    height: 700px;
-    background-color: #2a2a2a;
+  .decompile-button {
+    margin-top: 20px;
+    padding: 12px 40px;
+    background: #E7FF44;
+    color: #000000;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
   }
-  
+
+  .decompile-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(231, 255, 68, 0.3);
+  }
+
+  .upload p {
+    text-align: center;
+    font-size: 0.9em;
+    color: #8B8B8B;
+    margin-top: 20px;
+  }

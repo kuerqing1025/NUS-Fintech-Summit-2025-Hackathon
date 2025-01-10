@@ -1,0 +1,174 @@
+.report-container {
+  padding: 80px 40px;
+  background: #1C1F26;
+  color: white;
+  min-height: 100vh;
+}
+
+.report-header {
+  margin-bottom: 60px;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.report-header h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.contract-address {
+  color: #8B8B8B;
+  font-family: monospace;
+  font-size: 1.1em;
+  margin-bottom: 30px;
+}
+
+.summary-stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.stat-item {
+  background: #2A2D35;
+  padding: 15px 25px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.stat-label {
+  display: block;
+  color: #8B8B8B;
+  margin-bottom: 5px;
+  font-size: 0.9em;
+}
+
+.stat-value {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.vulnerabilities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.vulnerability-card {
+  background: #2A2D35;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  padding: 20px;
+  border-bottom: 3px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #22252C;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.risk-badge {
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content p {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.locations {
+  margin: 15px 0;
+}
+
+.locations ul {
+  list-style: none;
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.locations li {
+  color: #8B8B8B;
+  font-family: monospace;
+  margin: 5px 0;
+  padding: 5px 10px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.recommendation {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 15px;
+  color: #4CAF50;
+}
+
+.view-code-button {
+  background: #22252C;
+  color: #E7FF44;
+  border: 1px solid #E7FF44;
+  border-radius: 4px;
+  padding: 8px 16px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: all 0.3s ease;
+}
+
+.view-code-button:hover {
+  background: #E7FF44;
+  color: #22252C;
+}
+
+.code-snippet {
+  margin-top: 15px;
+  background: #22252C;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.code-snippet pre {
+  margin: 0;
+  padding: 15px;
+  overflow-x: auto;
+}
+
+.code-snippet code {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.9em;
+  color: #E7FF44;
+  line-height: 1.5;
+}
+
+.code-snippet::-webkit-scrollbar {
+  height: 8px;
+}
+
+.code-snippet::-webkit-scrollbar-track {
+  background: #22252C;
+}
+
+.code-snippet::-webkit-scrollbar-thumb {
+  background: #3A3D45;
+  border-radius: 4px;
+}
+
+.code-snippet::-webkit-scrollbar-thumb:hover {
+  background: #4A4D55;
+}
