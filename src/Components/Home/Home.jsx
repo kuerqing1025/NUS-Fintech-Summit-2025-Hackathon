@@ -14,7 +14,7 @@ const Home = () => {
         <h2>Upload Your Smart Contract</h2>
         <input type="text" />
         <p>
-          Upload your smart contract file to start the analysis process and
+          Input your smart contract number to start the analysis process and
           ensure its security.
         </p>
       </div>
